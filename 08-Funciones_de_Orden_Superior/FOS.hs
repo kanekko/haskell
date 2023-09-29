@@ -14,8 +14,8 @@ applyTwice f x = f (f x)
 
 ---- 32. Funciones Anónimas
 -- Ejemplo 1 (Función sin nombre):
--- \x -> x +3
--- (\x -> x +3) 4
+-- \x -> x + 3
+-- (\x -> x + 3) 4
 
 -- Ejemplo 2 (Función con nombre):
 doble x = 2 * x
