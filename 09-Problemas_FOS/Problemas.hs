@@ -3,3 +3,8 @@ eql :: [Int] -> [Int] -> Bool
 eql x y
     | length x /= length y = False
     | otherwise = and $ zipWith (==) x y
+
+---- 35. Problema 2
+prod :: [Int] -> Int
+prod = foldl (*) 1
+
