@@ -8,3 +8,6 @@ eql x y
 prod :: [Int] -> Int
 prod = foldl (*) 1
 
+---- 36. Problema 3
+prodOfEvens :: [Int] -> Int
+prodOfEvens = prod . filter even
