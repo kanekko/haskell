@@ -23,7 +23,7 @@ nand _ _ = True
 
 
 {-
-Definición de una función con guardas
+    Definición de una función con guardas
 -}
 valorAbsoluto :: Integer -> Integer
 valorAbsoluto n
@@ -32,7 +32,7 @@ valorAbsoluto n
 
 
 {-
-Definición Local de una función 
+    Definición Local de una función 
 -}
 {-fastExpA :: Integer -> Integer -> Integer
 fastExpA _ 0 = 1

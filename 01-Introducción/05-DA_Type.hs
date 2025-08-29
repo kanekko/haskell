@@ -1,5 +1,5 @@
 {-
-Ejemplo1
+    Ejemplo1
 -}
 type Nombre = String 
 type Carrera = String
@@ -7,7 +7,7 @@ type Carrera = String
 data Estudiante = Inscrito Nombre Carrera | Titulado Nombre
 
 {-
-Ejemplo 2
+    Ejemplo 2
 -}
 type NombreApellido  = String
 type Edad    = Int
@@ -16,7 +16,7 @@ type Salario = Float
 data Trabajador = Interno NombreApellido Edad Salario | Externo NombreApellido
 
 {-
-Ejemplo 3
+    Ejemplo 3
 -}
 type NombreCompleto  = String
 type SalarioNuevo = Float
@@ -30,7 +30,7 @@ showEmpleado (EmpleadoExterno n e) = n ++ " es de la empresa " ++ e
 
 
 {-
-Ejemplo 4
+    Ejemplo 4
 -}
 data AExp = Lit Int | Add AExp AExp | Mul AExp AExp
 
