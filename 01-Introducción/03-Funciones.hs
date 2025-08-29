@@ -1,5 +1,5 @@
 {- 
-Definición de funciones
+    Definición de funciones
 -}
 factorialA :: Integer -> Integer    -- Cabecera o firma
 factorialA 0 = 1                    -- Definición
@@ -15,7 +15,7 @@ fib n = fib(n-1) + fib(n-2)
 
 
 {-
-Definición de una función con patrones
+    Definición de una función con patrones
 -}
 nand :: Bool -> Bool -> Bool
 nand True True = False
@@ -34,7 +34,7 @@ valorAbsoluto n
 {-
 Definición Local de una función 
 -}
-fastExpA :: Integer -> Integer -> Integer
+{-fastExpA :: Integer -> Integer -> Integer
 fastExpA _ 0 = 1
 fastExpA x n =
     let y = fastExpA x n_halv
@@ -42,7 +42,18 @@ fastExpA x n =
     in
         if even n
         then y * y
-        else y * y * x
+        else y * y * x-}
+fastExpA :: Integer -> Integer -> Integer
+fastExpA _ 0 = 1
+fastExpA x n =
+  let y1 = fastExpA x n_halv_a
+      y2 = fastExpA x n_halv_b
+      n_halv_a = div n 2
+      n_halv_b = div (n - 1) 2
+   in if even n
+        then y1 * y1
+        else y2 * y2 * x
+
 
 fastExpB :: Integer -> Integer -> Integer
 fastExpB _ 0 = 1
@@ -52,6 +63,13 @@ fastExpB x n
     where
         y = fastExpB x n_halv
         n_halv = div n 2
+
+
+calculateArea :: Double -> Double -> Double
+calculateArea length width =
+  let area = length * width
+      perimeter = 2 * (length + width)
+   in area + perimeter
 
 
 {-
